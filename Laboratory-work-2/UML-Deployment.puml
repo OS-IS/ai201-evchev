@@ -1,0 +1,67 @@
+@startuml
+skinparam rectangle {
+    BorderStyle dashed
+}
+
+node CLIENT{
+rectangle USER_INTERFACE {
+component ImGui
+component Scene
+component PlayStopStates
+component SceneHierarchy
+component EditorManager
+component EditorTools
+component ObjectProperties
+ImGui -[dashed]-> Scene
+PlayStopStates --> Scene
+Scene -[dashed]-> SceneHierarchy
+Scene -[dashed]-> EditorManager
+Scene -[dashed]-> EditorTools
+Scene -[dashed]-> ObjectProperties
+}
+
+rectangle DATA_MANAGEMENT {
+component OpenGL
+component Observers
+component OpenAL
+component LWJGL
+component JBox2D
+Scene --> OpenGL
+Scene --> OpenAL
+Scene --> LWJGL
+PlayStopStates --> OpenGL
+PlayStopStates --> Observers
+PlayStopStates --> OpenAL
+EditorTools --> OpenGL
+EditorTools --> OpenAL
+EditorTools --> LWJGL
+ObjectProperties --> LWJGL
+ObjectProperties --> JBox2D
+EditorManager --> LWJGL
+SceneHierarchy --> LWJGL
+}
+
+rectangle DATA_PROCESSING{
+component GSONSerialize
+component JCA
+component FilePool
+OpenGL --> GSONSerialize
+Observers --> GSONSerialize
+OpenAL --> GSONSerialize
+LWJGL --> GSONSerialize
+JBox2D --> GSONSerialize
+GSONSerialize --> JCA
+JCA --> FilePool
+}
+
+rectangle DATA_STORAGE{
+storage AssetStorage
+storage SoundStorage
+storage ConfigurationStorage
+FilePool -- AssetStorage
+FilePool -- SoundStorage
+FilePool -- ConfigurationStorage
+}
+
+}
+@enduml
