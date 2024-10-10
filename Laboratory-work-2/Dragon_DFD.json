@@ -1,0 +1,788 @@
+{
+  "version": "2.2.0",
+  "summary": {
+    "title": "Dragon_DFD",
+    "owner": "",
+    "description": "",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "2D Platformer Game Enginee",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.2.0",
+        "cells": [
+          {
+            "position": {
+              "x": 490,
+              "y": 260
+            },
+            "size": {
+              "width": 990,
+              "height": 660
+            },
+            "shape": "trust-boundary-box",
+            "id": "4980c2aa-3825-4570-abcb-5a9e70647abc",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 90,
+              "y": 320
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "User"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "6da29609-681d-4cfa-9ef3-15fb75ad45d0",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "User",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Transmission of data on user actions to control components",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "3a1fd6f8-372b-4c78-9dcd-ab9388023aac",
+            "source": {
+              "cell": "897b3370-98e0-4f7c-978e-58cd2d09fbcd"
+            },
+            "target": {
+              "cell": "5f4d98e6-82d4-4bae-9133-dbab6c4edaae"
+            },
+            "labels": [
+              "Transmission of data on user actions to control components"
+            ],
+            "vertices": [
+              {
+                "x": 570,
+                "y": 540
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Control components update the interface based on the user's actions",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "a71479dd-1438-4846-a990-3c4d1ef5c2d1",
+            "source": {
+              "cell": "5f4d98e6-82d4-4bae-9133-dbab6c4edaae"
+            },
+            "target": {
+              "cell": "897b3370-98e0-4f7c-978e-58cd2d09fbcd"
+            },
+            "labels": [
+              "Control components update the interface based on the user's actions"
+            ],
+            "vertices": [
+              {
+                "x": 820,
+                "y": 600
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Transfer data for serialization or encryption",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "0b33d06c-0996-4635-b7ad-186fd97fb3b1",
+            "source": {
+              "cell": "5f4d98e6-82d4-4bae-9133-dbab6c4edaae"
+            },
+            "target": {
+              "cell": "99bf8696-f40a-40c7-9028-b9b28102a9fe"
+            },
+            "labels": [
+              "Transfer data for serialization or encryption"
+            ],
+            "vertices": [
+              {
+                "x": 920,
+                "y": 690
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Saving serialized files to disk",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "5379f06f-99f5-4250-9aa8-502c75d16885",
+                  "title": "Spoofing of Destination Data Store File System",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "File System may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of File System. Consider using a standard authentication mechanism to identify the destination data store.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                },
+                {
+                  "id": "be6e4f05-6a15-415f-a27b-5c1ea25c5b2c",
+                  "title": "Weak Access Control for a Resource",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Improper data protection of File System can allow an attacker to read information not intended for disclosure. Review authorization settings.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
+            },
+            "id": "d653e0fe-e38e-42e5-b518-a58807d91f73",
+            "source": {
+              "cell": "f31ec31f-baa8-4fa5-a8b9-89bd2e830e1f"
+            },
+            "target": {
+              "cell": "99bf8696-f40a-40c7-9028-b9b28102a9fe"
+            },
+            "labels": [
+              "Saving serialized files to disk"
+            ],
+            "vertices": [
+              {
+                "x": 1140,
+                "y": 500
+              },
+              {
+                "x": 1140,
+                "y": 590
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Retrieving data from level files",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "10768473-303d-4da8-b036-a8173055331b",
+                  "title": "Spoofing of Destination Data Store File System",
+                  "status": "NotApplicable",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "File System may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of File System. Consider using a standard authentication mechanism to identify the destination data store.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "6ecf01e3-4454-484b-850c-053371e68cde",
+                  "title": "Potential Excessive Resource Consumption for Data Processing or File System",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Does Data Processing or File System take explicit steps to control resource consumption? Resource consumption attacks can be hard to deal with, and there are times that it makes sense to let the OS do the job. Be careful that your resource requests don't deadlock, and that they do timeout.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "id": "e2948a9e-509f-4c8d-808c-4e2a97c73acb",
+            "source": {
+              "cell": "99bf8696-f40a-40c7-9028-b9b28102a9fe"
+            },
+            "target": {
+              "x": 1320,
+              "y": 420
+            },
+            "labels": [
+              "Retrieving data from level files"
+            ],
+            "vertices": [
+              {
+                "x": 1330,
+                "y": 630
+              },
+              {
+                "x": 1360,
+                "y": 590
+              },
+              {
+                "x": 1360,
+                "y": 530
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Loading of prepared data from level files",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "fb106cf9-2496-44d9-ba35-110be1c1676e",
+            "source": {
+              "cell": "99bf8696-f40a-40c7-9028-b9b28102a9fe"
+            },
+            "target": {
+              "cell": "5f4d98e6-82d4-4bae-9133-dbab6c4edaae"
+            },
+            "labels": [
+              "Loading of prepared data from level files"
+            ],
+            "vertices": [
+              {
+                "x": 930,
+                "y": 810
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Displaying information",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "402f1bbd-7bf5-4c50-a8ce-b68bbe720a77",
+                  "title": "External Entity Human User Potentially Denies Receiving Data",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Human User claims that it did not receive data from a process on the other side of the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "4ffc9438-7e88-446a-82d8-62ed8cbe0045",
+                  "title": "Data Flow Displaying information Is Potentially Interrupted",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An external agent interrupts data flowing across a trust boundary in either direction.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 2
+              }
+            },
+            "id": "e29955f4-4edf-4cca-bd5f-14667eb67318",
+            "source": {
+              "cell": "897b3370-98e0-4f7c-978e-58cd2d09fbcd"
+            },
+            "target": {
+              "cell": "6da29609-681d-4cfa-9ef3-15fb75ad45d0"
+            },
+            "labels": [
+              "Displaying information"
+            ],
+            "vertices": [
+              {
+                "x": 420,
+                "y": 430
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Entering data via the interface",
+              "description": "Entering data via the interface\n",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "9d11ca67-f5ba-4184-aacf-d785db47588b",
+                  "title": "Spoofing the User Interface Process",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "User Interface may be spoofed by an attacker and this may lead to information disclosure by Human User. Consider using a standard authentication mechanism to identify the destination process.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "c241ef34-9c38-4e9f-9c6f-7f714d7f0652",
+                  "title": "Potential Process Crash or Stop for User Interface",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "User Interface crashes, halts, stops or runs slowly; in all cases violating an availability metric.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "4ad563c8-9345-4a5d-bf55-1c7a4bdc1721",
+                  "title": "User Interface May be Subject to Elevation of Privilege Using Remote Code Execution",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Human User may be able to remotely execute code for User Interface.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "6e963335-6c8f-43ac-927e-2b8a08c59037",
+                  "title": "Elevation by Changing the Execution Flow in User Interface",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker may pass data into User Interface in order to change the flow of program execution within User Interface to the attacker's choosing.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "id": "6109f384-31ca-4acc-b98f-f4f5a13c7670",
+            "source": {
+              "cell": "6da29609-681d-4cfa-9ef3-15fb75ad45d0"
+            },
+            "target": {
+              "cell": "897b3370-98e0-4f7c-978e-58cd2d09fbcd"
+            },
+            "vertices": [
+              {
+                "x": 440,
+                "y": 280
+              }
+            ],
+            "labels": [
+              "Entering data via the interface"
+            ]
+          },
+          {
+            "position": {
+              "x": 660,
+              "y": 310
+            },
+            "size": {
+              "width": 120,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "User Interface"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "897b3370-98e0-4f7c-978e-58cd2d09fbcd",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "User Interface",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 640,
+              "y": 700
+            },
+            "size": {
+              "width": 120,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Data Management"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "5f4d98e6-82d4-4bae-9133-dbab6c4edaae",
+            "data": {
+              "type": "tm.Process",
+              "name": "Data Management",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 12
+          },
+          {
+            "position": {
+              "x": 1110,
+              "y": 687
+            },
+            "size": {
+              "width": 120,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Data Processing"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "99bf8696-f40a-40c7-9028-b9b28102a9fe",
+            "data": {
+              "type": "tm.Process",
+              "name": "Data Processing",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 13
+          },
+          {
+            "position": {
+              "x": 1218,
+              "y": 360
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "File System"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "f31ec31f-baa8-4fa5-a8b9-89bd2e830e1f",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Store",
+              "name": "File System",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          }
+        ]
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 11
+  }
+}
