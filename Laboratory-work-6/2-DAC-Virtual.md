@@ -7,4 +7,5 @@
 ### Завдання 2.3.1.5
 ![2 3 1 5](https://github.com/user-attachments/assets/b8ae7e25-f161-4d9c-a71b-047d17554230)
 ### Завдання 2.3.1.6
-![2 3 1 6](https://github.com/user-attachments/assets/b91feb76-d562-4db8-9bda-2e5815ae086a)
+![2 3 1 6](https://github.com/user-attachments/assets/f532f294-3413-4564-a2f1-bc6c2bfd4dd1)
+
