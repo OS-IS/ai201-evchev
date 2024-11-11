@@ -8,6 +8,7 @@
 ![image](https://github.com/user-attachments/assets/cbdbcdc9-ebe9-428e-9cc3-3b52dba7a12c)
 
 Запит:
+
 ![image](https://github.com/user-attachments/assets/de3fa8a3-fa9a-422a-9188-2fa5b92aa542)
 
 Таблиця auto після виклику функції:
