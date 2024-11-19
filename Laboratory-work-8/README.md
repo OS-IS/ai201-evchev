@@ -33,13 +33,25 @@ openssl x509 -in server.crt -text -noout
 psql "host=localhost port=5432 dbname=postgres user=evchev password=4213 sslmode=require"
 ```
 
+![image](https://github.com/user-attachments/assets/0e8d974d-d809-4522-afb6-19189c27d13b)
+
 6. Встановити ПЗ контейнерної віртуалізації Docker та запустити Docker через ваш Docker-обліковий запис.
+
+![image](https://github.com/user-attachments/assets/0da2c970-8ea5-40da-a294-0fa5dd8a3665)
 
 7. Запустити Docker-контейнер СКБД PostgreSQL, використовуючи раніше розглянуті приклади (порт прослуховування запитів СКБД PostgreSQL = 5466).
 
+![image](https://github.com/user-attachments/assets/7ae60012-418c-44ed-93ea-cd4b5fdd3f2e)
+
 8. У Docker-контейнері встановити програмний пакунок аналізу мережевих пакетів tcpdump. Отримати перелік мережевих інтерфейсів на вашому комп’ютері.
 
+![image](https://github.com/user-attachments/assets/a70062e6-8529-4a3a-9e55-91f189a13787)
+
+![image](https://github.com/user-attachments/assets/0ec6587c-9565-4c7e-812a-e33e550e9ffa)
+
 9. Провести запуск програми аналізу мережевих пакетів для кожного мережевого інтерфейсу поки не буде знайдено активний інтерфейс, який взаємодіє з мережею Internet та виводить на екран інформацію про ці пакети.
+
+![image](https://github.com/user-attachments/assets/782957e2-9f0e-4220-b159-8fb03ac933a4)
 
 10. Запустити програму аналізу мережевих пакетів в режимі прослуховування обраного мережевого інтерфейсу та налаштувати її на перегляд пакетів, які пов`язані з портом 5466, зберігаючи зміст пакетів в окремому файлі через перенаправлення потоку, наприклад, > res.dump. Результати роботи будуть використанні у наступних завданнях.
 
