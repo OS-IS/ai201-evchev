@@ -1,4 +1,4 @@
-### Криптографічний захист клієнт-серверної взаємодії в СКБД PostgreSQL
+![image](https://github.com/user-attachments/assets/24e172f0-c67e-4b8b-94e1-1069b96b01f8)### Криптографічний захист клієнт-серверної взаємодії в СКБД PostgreSQL
 
 1. Встановити OpenSSL-пакет. В терміналі командного рядку запустити утиліту openssl та переглянути перелік доступних команд.
 
@@ -8,11 +8,30 @@
 - атрибути C=UA, L=Odessa, O=OPU, OU=group, CN=surname.op.edu.ua, де group – назва вашої групи латиницею, surname – ваше прізвище латиницею
 - строк дії сертифікату = (variant * 10) днів, де variant – значення вашого варіанту.
 
+```
+openssl req -new -x509 -days 70 -nodes -text -out server.crt -keyout server.key -subj "/C=UA/L=Odesa/O=OPU/OU=AI-201/CN=Evchev.op.edu.ua"
+```
+
+![image](https://github.com/user-attachments/assets/62595d19-b222-4dc7-8fcb-50d885d4b590)
+
 3. Переглянути вміст сертифікату та визначити алгоритми створення відкритого ключа, а також алгоритм встановлення цифрового підпису.
+
+```
+openssl x509 -in server.crt -text -noout
+```
+
+![image](https://github.com/user-attachments/assets/faaf449f-ae80-4b52-8137-408a73098c0c)
+![image](https://github.com/user-attachments/assets/b16e2177-fff9-42d7-acab-578b691ec1fd)
 
 4. Скопіювати створений сертифікат відкритого ключа та закритий ключ до каталогу сервера СКБД PostgreSQL, яка використовувалася у попередній лабораторній роботі. У конфігураційному файлі postgresql.conf налаштувати значення SSL-параметрів для підтримки SSL-з'єднання між сервером та клієнтами.
 
+![image](https://github.com/user-attachments/assets/8bafbd11-147b-4275-9da3-a29e3b6b1633)
+
 5. Використовуючи програму psql, встановити TSL/SSL-з'єднання з БД за прикладом з попередньої лабораторної роботи, але використовуючи формат параметрів "host=var1 port=var2 dbname=var3 user=var4 password=var5 sslmode=var6". Визначити версію TSL-протоколу та перелік використаних криптоалгоритмів.
+
+```
+psql "host=localhost port=5432 dbname=postgres user=evchev password=4213 sslmode=require"
+```
 
 6. Встановити ПЗ контейнерної віртуалізації Docker та запустити Docker через ваш Docker-обліковий запис.
 
